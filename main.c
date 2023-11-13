@@ -17,7 +17,7 @@ bool isDelimiter(char symbol){
 
 
 int main() {
-    State state;
+    State state = WaitingNumber;
 
     char current;
     long long number = 0;
@@ -92,5 +92,5 @@ int main() {
         }
     }
 
-    printf("Количество восьмиричных чисел, находящихся в диапазоне от 10 до 1000: %i\n", count);
+    printf("Количество восьмиричных чисел, находящихся в диапазоне от 10 до 1000: %lli\n", count);
 }
